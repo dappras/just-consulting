@@ -31,6 +31,7 @@
 </head>
 
 <body>
+    @include('components.navbar.navbar')
     @yield('content')
 </body>
 
