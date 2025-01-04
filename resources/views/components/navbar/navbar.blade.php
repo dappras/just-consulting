@@ -11,10 +11,11 @@
             <ul class="navbar-nav mb-lg-0 gap-4">
                 <li class="nav-item">
                     <a class="nav-link {{ Route::is('home') ? 'text-secondary-custom' : 'text-light-custom' }}"
-                        aria-current="page" href="#">Home</a>
+                        aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light-custom" href="#">About</a>
+                    <a class="nav-link {{ Route::is('about') ? 'text-secondary-custom' : 'text-light-custom' }}"
+                        href="/about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light-custom" href="#">Contact Us</a>

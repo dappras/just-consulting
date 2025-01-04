@@ -63,7 +63,7 @@
             <div class="col-lg-6">
                 <div class="d-flex justify-content-end">
                     <div style="font-size: 14px; font-weight: lighter;">
-                        © 2023 Lumina by Thanks For Today Studio • All Rights Reserved
+                        © 2023 JustConsulting by Thanks For Today Studio • All Rights Reserved
                     </div>
                 </div>
             </div>
