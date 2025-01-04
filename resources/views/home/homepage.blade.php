@@ -5,4 +5,5 @@
     @include('home.section.offer')
     @include('home.section.story')
     @include('home.section.what-we-do')
+    @include('home.section.testimoni')
 @endsection
