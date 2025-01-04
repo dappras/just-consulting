@@ -18,7 +18,8 @@
                         href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light-custom" href="#">Contact Us</a>
+                    <a class="nav-link {{ Route::is('contact') ? 'text-secondary-custom' : 'text-light-custom' }}"
+                        href="/contact">Contact Us</a>
                 </li>
             </ul>
         </div>
