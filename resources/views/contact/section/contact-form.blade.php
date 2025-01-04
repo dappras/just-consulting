@@ -12,11 +12,15 @@
             </div>
         </div>
         <div class="col-lg-7 mt-5">
+            @if (session('message'))
+                <div class="alert alert-info mb-3">{{ session('message') }}</div>
+            @endif
+
             <div style="font-size: 32px; font-weight: bold; margin-bottom: 32px;">
                 We will be happy to help you
             </div>
 
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('contact.store') }}" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="row">
                     <div class="col-6">
@@ -34,13 +38,13 @@
                     </div>
                     <div class="col-6">
                         <div class="mb-4">
-                            <label for="fullname" style="font-size: 16px; font-weight: 600;"
+                            <label for="company" style="font-size: 16px; font-weight: 600;"
                                 class="form-label">Company</label>
-                            <input type="text" class="form-control" style="" id="fullname" name="fullname"
-                                placeholder="NovaBurst Cafe" value="{{ old('fullname') }}" required>
-                            @if ($errors->has('fullname'))
+                            <input type="text" class="form-control" style="" id="company" name="company"
+                                placeholder="NovaBurst Cafe" value="{{ old('company') }}" required>
+                            @if ($errors->has('company'))
                                 <span class="invalid-feedback">
-                                    <strong>{{ $errors->first('fullname') }}</strong>
+                                    <strong>{{ $errors->first('company') }}</strong>
                                 </span>
                             @endif
                         </div>

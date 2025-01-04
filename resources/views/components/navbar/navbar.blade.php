@@ -1,6 +1,12 @@
 <nav class="navbar navbar-expand-lg bg-primary-custom text-light-custom py-3">
     <div class="container">
-        <a class="navbar-brand text-light-custom" href="#">JustConsulting</a>
+        <a class="navbar-brand text-light-custom" href="#">
+            <div class="d-flex gap-2 align-items-center">
+                <img src="{{ asset('images/logo.jpg') }}" alt=""
+                    style="width: 48px; height: 48px; border-radius: 56px;">
+                <div>JustConsulting</div>
+            </div>
+        </a>
         <button class="navbar-toggler bg-secondary-custom" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
